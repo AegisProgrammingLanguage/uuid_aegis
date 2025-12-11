@@ -1,0 +1,31 @@
+namespace Uuid {
+    // Namespaces prédéfinis (Standards RFC) pour v3/v5
+    var NS_DNS  = "6ba7b810-9dad-11d1-80b4-00c04fd430c8"
+    var NS_URL  = "6ba7b811-9dad-11d1-80b4-00c04fd430c8"
+    var NS_OID  = "6ba7b812-9dad-11d1-80b4-00c04fd430c8"
+    var NS_X500 = "6ba7b814-9dad-11d1-80b4-00c04fd430c8"
+
+    func v1() { 
+        return uuid_v1() 
+    }
+    
+    func v3(namespace, name) { 
+        return uuid_v3(namespace, name) 
+    }
+    
+    func v4() { 
+        return uuid_v4() 
+    }
+    
+    func v5(namespace, name) { 
+        return uuid_v5(namespace, name) 
+    }
+    
+    func v6() { 
+        return uuid_v6() 
+    }
+    
+    func v7() { 
+        return uuid_v7() 
+    }
+}
