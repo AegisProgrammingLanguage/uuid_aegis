@@ -6,12 +6,8 @@ edition = "2024"
 [lib]
 crate-type = ["cdylib"]
 
-[[bin]]
-name = "package"
-path = "scripts/build_package.rs"
-
 [dependencies]
-aegis-lang = "0.2.1"
+aegis-lang = "0.4.0"
 uuid = { version = "1.4", features = [
     "v1", "v3", "v4", "v5", "v6", "v7", "v8", 
     "fast-rng", 
